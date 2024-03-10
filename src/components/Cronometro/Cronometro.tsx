@@ -14,11 +14,9 @@ export const Cronometro = () => {
       const dias = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
       const horas = Math.floor((diferenciaTiempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutos = Math.floor((diferenciaTiempo % (1000 * 60 * 60)) / (1000 * 60));
-      const segundos = Math.floor((diferenciaTiempo % (1000 * 60)) / 1000);
-      setContadorDias(dias)
-      setContadorHoras(horas)
-      setContadorMinutos(minutos)
-      setContador(`${dias} / ${horas} / ${minutos} / ${segundos} `);
+      const segundos = Math.floor((diferenciaTiempo % (1000 * 60)) / 1000);      
+      setContador(`${dias} Días ${horas} horas y ${minutos} minutos con ${segundos} segundos`);
+      // setContador(`Días ${dias} Horas ${horas} y ${minutos} Minutos ${segundos} `);
     }, 1000);
 
     return () => clearInterval(intervalo);
@@ -28,15 +26,16 @@ export const Cronometro = () => {
         <section className="cronometro_principal_mensaje">Celebra conmigo el día</section>
         <section className="cronometro_principal_img_calendario">
           <section className="cronometro_principal_img">
-            <div className="cronometro_principal_fecha">21-Abril-2024</div>
+            <div className="cronometro_principal_mensaje">21-Abril-2024</div>
             {/* <div className="cronometro_principal_calendario"></div> */}
           </section>
           <section className="cronometro_principal_calendario"></section>
         </section>
         <section className="cronometro_principal_cronometro">
-         <div className="cronometro_principoal_contador">Días / Horas / Minutos / Segundos</div>
-         <div className="cronometro_principoal_contador">{contador}</div>
-         {/* <div className="cronometro_principoal_contador">{contadorDias}&nbsp; &nbsp; &nbsp; &nbsp; {contadorHoras} &nbsp; &nbsp; &nbsp; &nbsp; {contadorMinutos}&nbsp; &nbsp; &nbsp; </div> */}
+          <div className="cronometro_principal_faltan">Faltan</div>          
+          <div className="cronometro_principal_faltan">{contador}</div>
+          <div className="cronometro_principal_faltan">Para mis Quince Años</div>
+          {/* <div className="cronometro_principoal_contador">{contadorDias}&nbsp; &nbsp; &nbsp; &nbsp; {contadorHoras} &nbsp; &nbsp; &nbsp; &nbsp; {contadorMinutos}&nbsp; &nbsp; &nbsp; </div> */}
         </section>
       </section>
     </section>
