@@ -17,7 +17,7 @@ video{
 .principal_principal_body {
   /* background-image: url('../src/assets/XimePhoto2.gif');  */
   /* background-image: url('../src/assets/confetti_fondo.gif'); */
-  background-image: url('../src/assets/PrincipalBakground.png'); 
+  background-image: url('../src/assets/XimeFondo.gif'); 
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -31,31 +31,36 @@ video{
   display: flex;
   flex-direction: column;
   text-align: center;  
-  width: 70%;
-  height: 35%;
+  width: 80%;
+  height: 85%;
   border-radius: 0.5rem;  
   font-style: italic;    
   overflow: hidden;
   position: relative;
+  /* border: 4px solid #ad8a1f; */
+  
+  outline-offset: -20px;
 }
 .informacionCorona_h1{
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(1rem, 2.5vw, 2rem); 
-  color: #000000;
+  font-size: clamp(2rem, 3vw, 4rem); 
+  color: #F9F3F1;
   width: 100%;
   height: 25%;
+  margin-top: 2rem;
 }
 .informacionCorona_h2{   
   font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(3rem, 10vw, 2rem); 
-  color: #000000;
+  font-size: clamp(4rem, 10vw, 2rem); 
+  /* color: #795300; */
+  color: #F9F3F1;
   width: 100%;
-  height: 40%;
+  height: 40%;  
 }
 .invitacion_principal_body{
   width: 100%;
@@ -293,7 +298,8 @@ video{
 .principal_img{
   width: 100%;
   height: 40%;
-  background-image: url('../src/assets/XimeLugar.png');  
+  /* background-image: url('../src/assets/XimeLugar.png');   */
+  background-image: url('../src/assets/XimePlace.jpeg');  
   background-size: cover;
   border-radius: 0.5rem;
 }
@@ -354,24 +360,69 @@ video{
 .principal_dresscode{
   width: 100%;
   height: 70%;
-
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0.5rem;
   box-sizing: border-box;
   align-items: center;
   text-align: center;
-  align-content: center;
+  align-content: center;  
 }
-.principal_regalo{
-  width: 100%;
-  height: 35%;
-  background-color: purple;
+.principal_dresscode_h1{
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3rem, 5vw, 4rem); 
+  color: #000000;
+}
+.principal_dresscode_p{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.3rem, 3vw, 4rem); 
+  color: #000000;
 }
 .principal_images{
+  max-width: 100%;
   display: flex;
   flex-direction: row;
 }
+.principal_regalo{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.principal_regalo_h1{
+  width: 100%;
+  height: 25%;
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3rem, 5vw, 4rem); 
+  color: #000000;
+}
+.principal_regalo_p{
+  width: 100%;
+  height: 60%;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.3rem, 2vw, 4rem); 
+  color: #000000;
+}
+.regalo_img{  
+  width: 35%;
+  height: 26%;
+}
+
+
+
+
 @media (width <=1000px) {
   .cronometro_principal_img_calendario {
     width: 100%;
@@ -408,5 +459,14 @@ video{
   .principal_img{
     height: 60%;
     background-position: 0% 90%;
+  }
+  .principal_images{
+    max-width: 40%;
+    display: flex;
+    flex-direction: row; 
+  }
+  .regalo_img{  
+    width: 15%;
+    height: 46%;
   }
 }
