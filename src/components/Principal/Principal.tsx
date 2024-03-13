@@ -8,7 +8,7 @@ export const Principal = (props:any) => {
       <section className="informacionCorona">
         <div className='informacionCorona_h1'>Mis XV Años</div>
         <div className='informacionCorona_h2'>{props.name}</div>
-        <div className='informacionCorona_h1'>21|Abril|2024</div>
+        <div className='informacionCorona_h1'>{props.day}</div>
       </section>
     </section>
   )

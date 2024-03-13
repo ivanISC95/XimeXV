@@ -15,8 +15,9 @@ video{
   z-index: -1;
 }
 .principal_principal_body {
-  background-image: url('../src/assets/XimePhoto2.gif'); 
+  /* background-image: url('../src/assets/XimePhoto2.gif');  */
   /* background-image: url('../src/assets/confetti_fondo.gif'); */
+  background-image: url('../src/assets/PrincipalBakground.png'); 
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -43,7 +44,7 @@ video{
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 2.5vw, 2rem); 
-  color: #fff;
+  color: #000000;
   width: 100%;
   height: 25%;
 }
@@ -52,7 +53,7 @@ video{
   font-weight: 400;
   font-style: normal;
   font-size: clamp(3rem, 10vw, 2rem); 
-  color: #fff;
+  color: #000000;
   width: 100%;
   height: 40%;
 }
@@ -261,7 +262,7 @@ video{
 .place_principal_content{
   width: 100%;
   height: 100%;
-  border: 2px solid #795300;
+  /* border: 2px solid #795300; */
   box-sizing: border-box;
 }
 .principal_title{
@@ -278,18 +279,99 @@ video{
 .principal_title_content{
   width: 100%;
   height: 80%;
- 
+  display: flex;
+  flex-direction: column;
 }
 .place_title{
   font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(4rem, 10vw, 6rem); 
-  color: #ad8a1f;
+  color: #000000;
   margin-top: 1.5rem;
-  
+}
+.principal_img{
+  width: 100%;
+  height: 40%;
+  background-image: url('../src/assets/XimeLugar.png');  
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+.principal_info{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F3F1;
+}
+.principal_info_texto{
+  width: 100%;
+  height:  100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 3rem;
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3rem, 5vw, 4rem); 
+  color: #000000;
+  border: 2px solid #795300;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.principal_info_boton{
+  width: 100%;
+  height:  20%;
+  background-color: aqua;
+}
+.principal_info_button{
+  width: 8rem;
+  height: 7rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background-color: #795300;
 }
 
+.vestimentaRegalo_principal_body{
+  width: 100%;
+  height: 100%;
+  background-color: #F9F3F1;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.principal_content{
+  width: 100%;
+  height: 1000%;
+  display: flex;
+  flex-direction: column;
+}
+.principal_dresscode{
+  width: 100%;
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+.principal_regalo{
+  width: 100%;
+  height: 35%;
+  background-color: purple;
+}
+.principal_images{
+  display: flex;
+  flex-direction: row;
+}
 @media (width <=1000px) {
   .cronometro_principal_img_calendario {
     width: 100%;
@@ -322,5 +404,9 @@ video{
   }
   .cronometro_principal_img{
     background-position: 0% 30%;
+  }
+  .principal_img{
+    height: 60%;
+    background-position: 0% 90%;
   }
 }

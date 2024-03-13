@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react'
 
-export const Cronometro = () => {
+export const Cronometro = (props:any) => {
   const [contador, setContador] = useState<string>('');
-  const [contadorDias, setContadorDias] = useState<Number>();
-  const [contadorHoras, setContadorHoras] = useState<Number>();
-  const [contadorMinutos, setContadorMinutos] = useState<Number>();
+
   useEffect(() => {
     const intervalo = setInterval(() => {
-      const fechaObjetivo = new Date('2024-04-21T00:00:00');
+      const fechaObjetivo = new Date('2024-04-27T00:00:00');
       const fechaActual = new Date();
       const diferenciaTiempo = fechaObjetivo.getTime() - fechaActual.getTime();
 
@@ -26,7 +24,7 @@ export const Cronometro = () => {
         <section className="cronometro_principal_mensaje">Celebra conmigo el día</section>
         <section className="cronometro_principal_img_calendario">
           <section className="cronometro_principal_img">
-            <div className="cronometro_principal_mensaje">21-Abril-2024</div>
+            <div className="cronometro_principal_mensaje">{props.day}</div>
             {/* <div className="cronometro_principal_calendario"></div> */}
           </section>
           <section className="cronometro_principal_calendario"></section>
