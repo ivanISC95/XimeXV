@@ -27,7 +27,7 @@ export const Cronometro = (props:any) => {
             <div className="cronometro_principal_mensaje">{props.day}</div>
             {/* <div className="cronometro_principal_calendario"></div> */}
           </section>
-          <section className="cronometro_principal_calendario"></section>
+          {/* <section className="cronometro_principal_calendario"></section> */}
         </section>
         <section className="cronometro_principal_cronometro">
           <div className="cronometro_principal_faltan">Faltan</div>          
